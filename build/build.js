@@ -3,8 +3,7 @@ let rollup = require('rollup'),
     uglify = require('uglify-js'),
     path = require('path'),
     fs = require('fs'),
-    zlib = require('zlib'),
-    cache;
+    zlib = require('zlib');
 
 const resolve = _path => path.resolve(__dirname, '../', _path)
 
@@ -112,28 +111,3 @@ function logError (e) {
 function blue (str) {
   return '\x1b[1m\x1b[34m' + str + '\x1b[39m\x1b[22m'
 }
-
-// rollup.rollup({
-//   entry:path.resolve(__dirname, '../src/index.js'),
-//   plugins:[buble()],
-//   cache
-// }).then( function ( bundle ) {
-//   // Generate bundle + sourcemap
-//   let result = bundle.generate({
-//     // output format - 'amd', 'cjs', 'es', 'iife', 'umd'
-//     format: 'cjs'
-//   });
-
-//   // Cache our bundle for later use (optional)
-//   cache = bundle;
-
-//   fs.writeFileSync( path.resolve(__dirname, '../dist/index.js'), result.code );
-
-//   // Alternatively, let Rollup do it for you
-//   // (this returns a promise). This is much
-//   // easier if you're generating a sourcemap
-// //   bundle.write({
-// //     format: 'cjs',
-// //     dest: 'bundle.js'
-// //   });
-// });
