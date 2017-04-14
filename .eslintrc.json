@@ -7,7 +7,6 @@
         "browser": true,
         "node": true
     },
-    "plugins": ["html","vue"],
     "rules": {
         "no-var":"error",//不使用var
         "one-var":"warn",//只用一个定义符号

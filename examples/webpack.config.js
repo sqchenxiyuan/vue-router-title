@@ -6,7 +6,8 @@ module.exports = {
     devtool:'eval-source-map',
 
     entry:{
-        "title-change":path.resolve(__dirname, './title-change/app.js')
+        "title-change":path.resolve(__dirname, './title-change/app.js'),
+        "function":path.resolve(__dirname, './function/app.js')
     },
 
     output:{
