@@ -1,0 +1,27 @@
+{
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module"
+    },
+    "env": {
+        "browser": true,
+        "node": true
+    },
+    "plugins": ["html","vue"],
+    "rules": {
+        "no-var":"error",//不使用var
+        "one-var":"warn",//只用一个定义符号
+        "one-var-declaration-per-line":"warn",//禁止定义在同一行
+        "no-multi-spaces":"warn",//禁止多余的空格
+        "arrow-spacing":"warn",//箭头函数前后加空格
+        "array-bracket-spacing":"warn",//数组内部添加空格
+        "block-spacing":"warn",//单行块级元素需要在前后添加空格
+        "comma-spacing":"warn",//逗号后面加空格
+        "computed-property-spacing":"warn",//[]获取属性时内部不能加空格
+        "func-call-spacing":"warn",//函数调用时之间不能有空格
+        "key-spacing":["warn",{"beforeColon":false,"afterColon":false}],//对象键值对间不能有空格
+        "keyword-spacing":"warn",//关键词前后要有空格
+        "space-infix-ops":["error", {"int32Hint": false}],//等号前后加空格
+        "space-unary-ops":["warn",{"words":true,"nonwords":false}]//一些一元运算需要前后加空格
+    }
+}
