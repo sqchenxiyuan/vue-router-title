@@ -5,7 +5,6 @@
   "main": "dist/vue-router-title.common.js",
   "scripts": {
     "build": "node build/build.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
     "dev":"webpack-dev-server --inline --hot --config examples/webpack.config.js"
   },
   "repository": {
