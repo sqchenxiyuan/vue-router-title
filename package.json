@@ -1,6 +1,6 @@
 {
   "name": "vue-router-title",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "auto change document title with vue-router",
   "main": "dist/vue-router-title.common.js",
   "scripts": {
