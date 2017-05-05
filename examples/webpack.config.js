@@ -7,7 +7,9 @@ module.exports = {
 
     entry:{
         "title-change":path.resolve(__dirname, './title-change/app.js'),
-        "function":path.resolve(__dirname, './function/app.js')
+        "function":path.resolve(__dirname, './function/app.js'),
+        "nesting":path.resolve(__dirname, './nesting/app.js'),
+        "default-title":path.resolve(__dirname, './default-title/app.js')
     },
 
     output:{
@@ -27,7 +29,7 @@ module.exports = {
     resolve:{
         alias:{
             'vue':'vue/dist/vue.common.js',
-            'vue-router-title':path.resolve(__dirname,'../src/index.js')
+            'vue-router-title':path.resolve(__dirname, '../src/index.js')
         }
     },
 

@@ -9,12 +9,11 @@ var CONFIG = {
 };
 
 function setTitle(title){
-    if (title === undefined || title === null){
-        title = CONFIG.defaultTitle;
-    }
-    if (title !== undefined && title !== null && window){
+
+    if (title != undefined && window){
         window.document.title = title;
     }
+
 }
 
 function VueRouterTitle(options){
@@ -32,8 +31,8 @@ function install(
     var afterEach = ref.afterEach;
 
 
-    if (defaultTitle !== undefined && defaultTitle !== null){
-        CONFIG.defaultTitle === defaultTitle;
+    if (defaultTitle != undefined){
+        CONFIG.defaultTitle = defaultTitle;
     }
 
     if (router){
@@ -46,6 +45,8 @@ function install(
                     return null;
                 }
             }, null);
+
+            if (title == undefined) { title = CONFIG.defaultTitle; }            
 
             if (typeof title === 'function') { title = title(to, {router: router, store: store}); }
 
